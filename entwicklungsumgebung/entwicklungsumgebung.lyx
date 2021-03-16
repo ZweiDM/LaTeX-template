@@ -1,0 +1,277 @@
+#LyX file created by tex2lyx 2.1
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass memoir
+\options openright
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package \usepackage{german}
+\inputencoding iso8859-1
+\fontencoding default
+\font_roman default
+\font_sans cmss
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing single
+\use_hyperref true
+\pdf_bookmarks 0
+\pdf_bookmarksnumbered 0
+\pdf_bookmarksopen 0
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks 0
+\pdf_pdfborder 0
+\pdf_colorlinks 1
+\pdf_backref section
+\pdf_pdfusetitle 0
+\pdf_quoted_options "linkcolor=darkgray,urlcolor=darkblue,citecolor=darkblue,filecolor=darkgreen"
+\papersize a4paper
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date true
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle Ruled
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%  E N T W I C K L U N G S U M G E B U N G
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Entwicklungsumgebung
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "cha:umgebung"
+
+\end_inset
+
+ Als Entwicklungsumgebung für die Erstellung und Bearbeitung von Latex-Dokumenten unter Windows eignet sich am besten die Kombination aus MiK
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+TeX
+\end_layout
+
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+
+\begin_layout Standard
+www.miktex.org
+\end_layout
+
+\end_inset
+
+ und LEd
+\begin_inset Foot
+status collapsed
+
+
+\begin_layout Standard
+www.latexeditor.org
+\end_layout
+
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Laden und installieren Sie zunächst MiK
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+TeX
+\end_layout
+
+\end_inset
+
+, dann LEd. Öffnen Sie (beispielsweise duch einfache 
+\shape italic
+drag&drop
+\shape default
+) eine zu editierende .tex-Datei, schreiben und editieren Sie den Text, speichern die Datei und rufen dann im Explorer die Datei 
+\family typewriter
+make.bat
+\family default
+ auf. Eventuell müssen Sie einmal die letzte Zeile in 
+\family typewriter
+make.bat
+\family default
+ ändern, um die Pfadangabe auf den Acrobat-Reader zu aktualisieren. Wenn Sie keine Fehler gemacht haben, sollte das fertige Dokument 
+\family typewriter
+abschlussarbeit.pdf
+\family default
+ auf dem Bildschirm erscheinen.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sie können das 
+\family typewriter
+make.bat
+\family default
+ auch in die LEd-Umgebung integrieren, ohne dafür ein LEd-Projekt anlegen zu müssen und so die in dieser Vorlage verwendete Struktur zu verwenden. Dabei macht man sich zunutze, dass LEd bei Drücken des braunen 
+\shape italic
+Build all
+\shape default
+-Pfeiles rechts oben im Editor die Datei 
+\family typewriter
+Build.bat
+\family default
+ im Batches-Ordner von LEd aufruft. Gehen Sie folgendermaßen vor: 
+\end_layout
+
+\begin_layout Enumerate
+Wechseln Sie in den Ordner 
+\family typewriter
+Batches
+\family default
+ im LEd-Programmordner. 
+\end_layout
+
+\begin_layout Enumerate
+Ändern Sie eventuell die Schreiberechte der Datei 
+\family typewriter
+Build.bat
+\family default
+ auf Vollzugriff für alle Benutzer. 
+\end_layout
+
+\begin_layout Enumerate
+Öffnen Sie 
+\family typewriter
+Build.bat
+\family default
+, fügen eine Zeile zum Wechseln in Ihren Ordner mit der Bachelorarbeit hinzu (z.B. 
+\family typewriter
+cd C:
+\backslash
+Users
+\backslash
+khbratzke
+\backslash
+Desktop
+\backslash
+Bachelorarbeit
+\backslash
+
+\family default
+) und kopieren dann den Inhalt der Datei 
+\family typewriter
+make.bat
+\family default
+ in die folgenden Zeilen. 
+\end_layout
+
+\begin_layout Enumerate
+Speichern Sie 
+\family typewriter
+Build.bat
+\family default
+. 
+\end_layout
+
+\begin_layout Standard
+Zum Bearbeiten eines Kapitels Ihrer Bachelorarbeit öffnen Sie LEd und ziehen die zu editierende .tex-Datei per Drag&Drop in den LEd. Schreiben und ändern Sie Ihren Text und drücken dann den braunen 
+\shape italic
+Build all
+\shape default
+-Button. 
+\end_layout
+
+\end_body
+\end_document
